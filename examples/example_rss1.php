@@ -67,4 +67,5 @@ $newItem->addElementArray(array('title'=>'The 2nd feed', 'link'=>'http://www.goo
 $TestFeed->addItem($newItem);
 
 //OK. Everything is done. Now generate the feed.
+header ('Content-type: application/xml; charset=utf-8');
 $TestFeed->printFeed();
