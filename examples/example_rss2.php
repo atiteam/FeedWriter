@@ -116,4 +116,5 @@ $myFeed = $TestFeed->generateFeed();
 
 // Do anything you want with the feed in $myFeed. Why not send it to the browser? ;-)
 // You could also save it to a file if you don't want to invoke your script every time.
+header ('Content-type: application/xml; charset=utf-8');
 echo $myFeed;
