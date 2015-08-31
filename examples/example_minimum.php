@@ -61,4 +61,5 @@ $TestFeed->addItem($itemOne);
 $TestFeed->addItem($itemTwo);
 
 //OK. Everything is done. Now generate the feed.
+header ('Content-type: application/xml; charset=utf-8');
 $TestFeed->printFeed();
